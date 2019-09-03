@@ -17,7 +17,7 @@ public class TestRSA {
         String publicKey = keys[0];
         String privateKey = keys[1];
 
-        String value = "hello soundbus 99";
+        String value = "hello nathan 99";
         System.out.println("value:" + value);
 
         String privateKeyEncrypt = RSA.privateKeyEncrypt(privateKey, value);

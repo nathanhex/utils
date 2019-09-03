@@ -71,7 +71,7 @@ public class TestAES extends TestCase {
         String encodeToString = Base64.getEncoder().encodeToString(s.getBytes("UTF-8"));
         System.out.println(encodeToString);
 
-        s = "{\"content\": \"http://gw.soundbus.cn/s?__sd=1234\"，\"type\": \"URL\"}";
+        s = "{\"content\": \"http://gw.github.cn/s?__sd=1234\"，\"type\": \"URL\"}";
         encodeToString = Base64.getEncoder().encodeToString(s.getBytes("UTF-8"));
         System.out.println(encodeToString);
 
