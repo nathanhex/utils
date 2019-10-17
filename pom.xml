@@ -35,5 +35,6 @@
 
     <modules>
         <module>common-encryption</module>
+        <module>jutils</module>
     </modules>
 </project>

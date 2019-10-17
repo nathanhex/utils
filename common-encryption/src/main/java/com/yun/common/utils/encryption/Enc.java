@@ -1,6 +1,3 @@
-/**
- * Project:sop-core-encryption
- */
 package com.yun.common.utils.encryption;
 
 import java.nio.charset.Charset;
@@ -8,7 +5,6 @@ import java.util.Base64;
 
 /**
  * @author nathan
- * @created 2017-01-17
  */
 public class Enc {
 
@@ -57,8 +53,8 @@ public class Enc {
     }
 
     public static String compress62(String source, int sourceRadix, int compressLength) {
-        StringBuffer sourceBuf = new StringBuffer(source);
-        StringBuffer targetBuf = new StringBuffer();
+        StringBuilder sourceBuf = new StringBuilder(source);
+        StringBuilder targetBuf = new StringBuilder();
         int start = 0;
         int end = 0;
         int length = source.length();
@@ -100,10 +96,12 @@ public class Enc {
         }
 
         public static String encode(long number) {
-            if (number < 0)
+            if (number < 0) {
                 throw new IllegalArgumentException("Number(Radix62) must be positive: " + number);
-            if (number == 0)
+            }
+            if (number == 0) {
                 return "0";
+            }
             StringBuilder buf = new StringBuilder();
             while (number != 0) {
                 buf.append(digitsChar[(int) (number % BASE)]);

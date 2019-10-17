@@ -1,6 +1,4 @@
-/**
- * Project:sop-pay-auth
- */
+
 package com.yun.common.utils.encryption;
 
 import java.security.KeyFactory;
